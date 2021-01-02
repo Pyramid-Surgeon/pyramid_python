@@ -22,7 +22,7 @@ base_list = [2,3,5,7,11]
 ar = Arnault(base_list)
 ar.perform()
 ```
-This will return 3 primes which make up the composite number which will pass the miller-rabin test for the bases 2,3,5,7,11.
+This will return 3 primes which make up a composite number which will pass the miller-rabin test for the bases 2,3,5,7,11.
 ```python
 [286472803, 11745384883, 3724146427]
 ```
