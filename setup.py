@@ -4,7 +4,7 @@ with open("README.md", "r", encoding="utf-8") as fh:
     long_description = fh.read()
 
 setuptools.setup(
-    name="pkg-pyramid_python", # Replace with your own username
+    name="pyramid_python",
     version="0.0.1",
     author="Pyramid Surgeon",
     author_email="n/a",
