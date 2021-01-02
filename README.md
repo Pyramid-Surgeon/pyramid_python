@@ -6,7 +6,7 @@ This repository contains Python scripts created during CTFs, which have been mod
 ```sh
 git clone https://github.com/Pyramid-Surgeon/pyramid_python.git
 cd pyramid_python
-python setup.py install
+python setup.py install --user
 ```
 
 # Documentation
