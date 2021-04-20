@@ -1,14 +1,16 @@
 from pyramid_python.crypto.arnault import *
 
+
 def test_arnault():
-        """
-        Test if resulting composite number passes the Miller Rabin test.
-        """
-        primes = Arnault([2,3,5,7,11]).perform()
-        composite = 1
-        for p in primes:
-                composite *= p
-        assert miller_rabin(composite, [2,3,5,7,11])
+    """
+    Test if resulting composite number passes the Miller Rabin test.
+    """
+    primes = Arnault([2, 3, 5, 7, 11]).perform()
+    composite = 1
+    for p in primes:
+        composite *= p
+    assert miller_rabin(composite, [2, 3, 5, 7, 11])
+
 
 def miller_rabin(n, b):
     """
