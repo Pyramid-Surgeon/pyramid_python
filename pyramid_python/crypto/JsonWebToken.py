@@ -14,7 +14,7 @@ https://github.com/silentsignal/rsa_sign2n/blob/release/standalone/jwt_forgery.p
 
 
 class Token:
-    def __init__(self, tokens: List[str], exponent: List[int] = [3, 65567], verbose: bool = False) -> None:
+    def __init__(self, tokens: List[str], exponent: List[int] = [3, 65537], verbose: bool = False) -> None:
         # Error catching
         assert tokens is not None
         for e in exponent:
