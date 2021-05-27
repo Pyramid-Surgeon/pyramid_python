@@ -5,7 +5,7 @@ with open("README.md", "r", encoding="utf-8") as fh:
 
 setuptools.setup(
     name="pyramid_python",
-    version="0.0.1",
+    version="0.0.2",
     author="Pyramid Surgeon",
     author_email="n/a",
     description="Repository of Python scripts made during CTFs.",
