@@ -3,7 +3,6 @@ from Crypto.PublicKey import RSA
 import random
 import jwt
 
-# TODO: There is some bug when e = 65537. Need to look into it
 def test_pubkey_from_sig():
     """
     Test if resulting public key is correct.
