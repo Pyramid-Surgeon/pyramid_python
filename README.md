@@ -26,3 +26,15 @@ This will return 3 primes which make up a composite number which will pass the m
 ```python
 [286472803, 11745384883, 3724146427]
 ```
+
+## Public key from JWT signature.
+This method attempts to find the public key (N) used to sign a set of json web tokens. It can take some time for larger exponents.
+
+Example usage:
+```python
+from pyramid_python.crypto.JsonWebToken import Token
+
+token_list = ["ey..", "ey..."]
+e, n = Token(tokens).key_from_sig()
+```
+This will return the exponent (e) and the modulus (N).
