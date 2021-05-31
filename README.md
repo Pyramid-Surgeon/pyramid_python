@@ -28,13 +28,13 @@ This will return 3 primes which make up a composite number which will pass the m
 ```
 
 ## Public key from JWT signature.
-This method attempts to find the public key (N) used to sign a set of json web tokens. It can take some time for larger exponents.
+This attempts to find the public key (N) used to sign a set of two or more json web tokens. It can take some time for larger exponents.
 
 Example usage:
 ```python
 from pyramid_python.crypto.JsonWebToken import Token
 
 token_list = ["ey..", "ey..."]
-e, n = Token(tokens).key_from_sig()
+e, n = Token(token_list).key_from_sig()
 ```
-This will return the exponent (e) and the modulus (N).
+This will return the exponent (e) and the modulus (N). You can then use [pycrypotodome](https://pycryptodome.readthedocs.io/en/latest/src/public_key/rsa.html#Crypto.PublicKey.RSA.construct) to get the public key in PEM format.
